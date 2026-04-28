@@ -1,15 +1,16 @@
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
+import java.util.Scanner;
 
 public class MainTest {
 
-    @Test
-    void testSum() {
-        assertEquals(5, Main.sum(2, 3));
+    public static int max(int a, int b) {
+        return Math.max(a, b);
     }
 
-    @Test
-    void testNegative() {
-        assertEquals(-1, Main.sum(2, -3));
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+
+        System.out.println(max(a, b));
     }
 }
